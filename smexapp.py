@@ -91,18 +91,18 @@ def AuthWindow():
 
         window_new = Tk()
         window_new.title('Твоя интересная жизнь!')
-        window_new.geometry("400x500")
+        window_new.geometry("550x500")
         window_new.frame()
         window_new['bg'] = '#66CDAA'
 
         h = Label(window_new,bg='#66CDAA', text='Привет! Здесь можно найти совет \nкак поднять себе настроение:', font='Candara 18')
-        h.place(x=30, y=40)
+        h.place(x=60, y=40)
 
         h1 = Label(window_new,bg='#66CDAA', text='Какое сегодня число? ', font='Candara 14')
-        h1.place(x=20, y=110)
+        h1.place(x=60, y=110)
 
         h2 = Entry(window_new,bg='#66CDAA',width=32, font='Candara 14')
-        h2.place(x=20, y=150)
+        h2.place(x=80, y=150)
 
         h2checkin = IntVar(window_new)
         h2check = Checkbutton(window_new,text='Я ввел день! Я молодец!',
@@ -112,7 +112,7 @@ def AuthWindow():
                                  font='Candara 10',
                                  bg='#66CDAA',
                                  activebackground='#00FA9A')
-        h2check.place(x=20, y=180)
+        h2check.place(x=80, y=180)
 
         h3 = Button(window_new,text='Нажми меня!',
                     command=check_null,
@@ -120,7 +120,7 @@ def AuthWindow():
                     font='Candara 14',
                     bg='#00FFFF',
                     border=4)
-        h3.place(x=20, y=200)
+        h3.place(x=90, y=210)
 
         h4checkin = IntVar(window_new)
         h4check = Checkbutton(window_new,text='А меня не нажимай!',
@@ -132,7 +132,7 @@ def AuthWindow():
                             bg='#00FFFF',
                             border=4,
                             command=DONTPUSH)
-        h4check.place(x=180, y=200)
+        h4check.place(x=260, y=210)
 
         h5 = Button(window_new,
                     text='Наигрался!',
@@ -141,17 +141,17 @@ def AuthWindow():
                     font='Candara 14',
                     bg='#00FFFF',
                     border=4)
-        h5.place(x=140, y=450)
+        h5.place(x=200, y=450)
 
 
         t4 = Label(window_new,bg='#66CDAA',text= ' ' , font='Candara 14')
-        t4.place(x=40, y=250)
+        t4.place(x=80, y=250)
         t5 = Label(window_new,bg='#66CDAA',text=' ' , font='Candara 14')
-        t5.place(x=50, y=300)
+        t5.place(x=80, y=300)
         t6 = Label(window_new,bg='#66CDAA', text=' ', font='Candara 14')
-        t6.place(x=50, y=340)
+        t6.place(x=80, y=340)
         t7 = Label(window_new,bg='#66CDAA', text=' ', font='Candara 14')
-        t7.place(x=50, y=380)
+        t7.place(x=80, y=380)
 
         window_new.mainloop()
 
